@@ -12,9 +12,6 @@
   # Node.js version to use
   NODE_VERSION = "18"
   
-  # NPM version to use (optional)
-  NPM_VERSION = "9"
-  
   # Ensure dev dependencies are installed
   NPM_FLAGS = "--include=dev"
 
