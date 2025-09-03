@@ -1,0 +1,10 @@
+# Redirects for Single Page Application
+# This ensures all routes are handled by React Router
+
+/*    /index.html   200
+
+# Optional: Redirect www to non-www (uncomment if needed)
+# https://www.elite-rentals.netlify.app/*  https://elite-rentals.netlify.app/:splat  301!
+
+# Optional: Force HTTPS (uncomment if needed)
+# http://elite-rentals.netlify.app/*  https://elite-rentals.netlify.app/:splat  301!
