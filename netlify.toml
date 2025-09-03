@@ -5,15 +5,15 @@
   # Directory that contains the deploy-ready HTML files and assets
   publish = "dist"
   
-  # Build command using npm ci for reliable builds
-  command = "npm ci && npm run build"
+  # Build command - use npm install to ensure all dependencies
+  command = "npm install --production=false && npm run build"
+  
+  # Ignore cache to ensure fresh builds
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF"
 
 [build.environment]
   # Node.js version to use
   NODE_VERSION = "18"
-  
-  # Ensure dev dependencies are installed
-  NPM_FLAGS = "--include=dev"
 
 # Redirect rules for Single Page Application
 [[redirects]]
